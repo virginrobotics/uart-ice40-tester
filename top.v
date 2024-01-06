@@ -14,23 +14,36 @@ module top (
 );
 
 //12MHz to 9600Hz
-parameter baud_period = 625 ;
+parameter BAUD_PERIOD = 625 ;
 reg [31:0] cntr9600 = 32'h0;
 reg baud_clk = 0;
 
+//12MHz to 1MHz
+parameter ONEHZ_PERIOD = 6000000;
+reg [31:0] cntr1hz = 32'h0;
+reg clk_1hz = 0;
+
 wire tx_en;
-reg [7:0] load_byte;
+reg [7:0] load_byte = 8'b00110011;
 wire load;
 wire ready;
 
-always @(posedge hwclk) begin
-    
+// 9600 uart baud generator
+always @(posedge hwclk) begin 
     cntr9600 <= cntr9600 + 1;
-    if (cntr9600 == baud_period) begin
+    if (cntr9600 == BAUD_PERIOD) begin
         baud_clk <= ~baud_clk;
         cntr9600 <= 32'h0;
     end
+end
 
+// 1Hz generator
+always @(posedge hwclk) begin
+    cntr1hz <= cntr1hz + 1;
+    if (cntr1hz == ONEHZ_PERIOD) begin
+        clk_1hz <= ~clk_1hz;
+        cntr1hz <= 32'h0;
+    end    
 end
 
 //uart_tx u1(.clk(baud_clk), .ftdi_tx(ftdi_tx));
@@ -46,8 +59,9 @@ uart_fsm #(
     .load(load),
     .ready(ready),
     .ftdi_tx(ftdi_tx)
-);
+);    
 
+assign load = clk_1hz;
 
 assign tx_en = 1;
 

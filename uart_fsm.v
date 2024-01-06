@@ -13,8 +13,8 @@ module uart_fsm #(
 );
 
 parameter START = 4'h0, BIT1 = 4'h1, BIT2 = 4'h2, BIT3 = 4'h3, BIT4 = 4'h4, BIT5 = 4'h5, BIT6 = 4'h6, BIT7 = 4'h7, BIT8 = 4'h8, STOP = 4'h9;
-parameter FEED = 4'ha;
-reg [3:0] state = 4'h0, next_state;
+parameter IDLE = 4'ha;
+reg [3:0] state = 4'ha, next_state;
 
 reg [DATA_WIDTH-1:0] tx_byte = 8'b01000111;
 reg [DATA_WIDTH-1:0] feed_byte = 8'b01000111;
@@ -40,6 +40,11 @@ end
 always @(*) begin
     if (tx_en) begin
         case (state)
+            IDLE: begin
+                ftdi_tx = 1'b1;
+                if (load) next_state = START;
+                else next_state = IDLE;
+            end
             START: begin 
                 //start bit -> 0
                 ftdi_tx = 1'b0;
@@ -84,11 +89,11 @@ always @(*) begin
             end
             STOP: begin 
                 ftdi_tx = 1'b1;
-                next_state = START;
+                next_state = IDLE;
                 ready = 1'b1;
             end
             default: begin
-                next_state = START;
+                next_state = IDLE;
                 ready = 1'b0;
             end
 
