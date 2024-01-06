@@ -1,3 +1,10 @@
+// to test uart do following
+// make all
+// make burn
+// sudo screen /dev/ttyUSB1 9600
+
+
+
 module top (
     input hwclk,
 
