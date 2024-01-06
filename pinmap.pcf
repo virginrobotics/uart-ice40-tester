@@ -1,0 +1,5 @@
+set_io --warn-no-port led B5
+
+set_io --warn-no-port hwclk J3
+
+set_io --warn-no-port ftdi_tx B12
