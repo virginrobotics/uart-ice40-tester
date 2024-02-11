@@ -40,7 +40,7 @@ module top (
 
     always @(posedge baud_clk) begin
 
-        if (shift_count == 9) begin
+        if (shift_count == SHIFT_AMOUNT-1) begin
             shift_count <= 0;
             tray        <= data_frame;
             ftdi_tx_gg  <= 1; 
