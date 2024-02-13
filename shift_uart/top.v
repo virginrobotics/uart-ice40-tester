@@ -10,24 +10,6 @@ module top (
     parameter SOURCE_CLK = 12000000;
     parameter TARGET_CLK = 9600; // enter desired baud here : 4800, 9600, 115200 
 
-    parameter N = SOURCE_CLK/TARGET_CLK;
-    parameter COUNTER_PERIOD = N/2;
-
-    // clock registers
-    reg [CNTR_W-1:0] counter = 0;
-    reg baud_clk = 0;
-
-    // baud clk generator
-    always @(posedge hwclk) begin
-
-        counter <= counter + 1'b1;
-
-        if (counter == COUNTER_PERIOD) begin
-            counter <= 32'b0;
-            baud_clk <= ~baud_clk;
-        end 
-    end
-
     // Shift out logic
     localparam FRAME_WIDTH = 10;
     localparam SHIFT_AMOUNT = 10;
@@ -36,6 +18,24 @@ module top (
     wire frame_sent;
     reg [FRAME_WIDTH-1:0] data_frame = 10'b1010000010;
     
+    wire baud_clk;
+
+    //9600 Hz UART baud clk generator
+
+    baud_gen #(
+        .CNTR_W(CNTR_W),
+        .SOURCE_CLK(SOURCE_CLK),
+        .TARGET_CLK(TARGET_CLK)
+    ) baud_gen_inst (
+        // ref clk
+        .hwclk(hwclk),
+        // baud clk out
+        .baud_clk(baud_clk)
+    );
+
+
+    // Shift register based basic UART 8n1 transmitter
+
     shift_tx #(
         .FRAME_WIDTH(FRAME_WIDTH),
         .SHIFT_AMOUNT(SHIFT_AMOUNT)
@@ -46,26 +46,6 @@ module top (
         .ftdi_tx(ftdi_tx),
         .frame_sent(frame_sent)
     );
-    
-    
-    
-
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 
     
