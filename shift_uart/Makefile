@@ -6,6 +6,7 @@ FOOTPRINT = ct256
 
 # Files
 FILES = top.v
+FILES += shift_tx.v
 
 .PHONY: all clean burn
 
