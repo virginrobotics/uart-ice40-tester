@@ -12,7 +12,7 @@ Update as on 11 Feb 24
 
 To Do
 
-- put baud clock and shift logic in sperate modules
+- ~~put baud clock and shift logic in sperate modules~~
 - add data_frame load capability with a load_enable
 - use increment logic to print "Hello World"
 - 11 ASCII characters
