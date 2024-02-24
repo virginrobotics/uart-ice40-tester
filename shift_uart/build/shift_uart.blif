@@ -7,502 +7,616 @@
 .names $true
 1
 .names $undef
-.gate SB_LUT4 I0=shift_count[1] I1=shift_count[2] I2=$abc$626$new_n50_ I3=$false O=$0\tray[9:0][9]
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:48"
-.param LUT_INIT 00010000
-.gate SB_LUT4 I0=shift_count[4] I1=shift_count[5] I2=shift_count[0] I3=shift_count[3] O=$abc$626$new_n50_
-.attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
-.param LUT_INIT 0001000000000000
-.gate SB_LUT4 I0=$abc$626$new_n52_ I1=$abc$626$new_n57_ I2=$false I3=$false O=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.gate SB_LUT4 I0=uart_tx_inst.state[0] I1=uart_tx_inst.state[1] I2=$false I3=$false O=$abc$924$auto$rtlil.cc:1969:NotGate$906
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:44"
 .param LUT_INIT 1000
-.gate SB_LUT4 I0=$abc$626$new_n53_ I1=$abc$626$new_n54_ I2=$abc$626$new_n55_ I3=$abc$626$new_n56_ O=$abc$626$new_n52_
+.gate SB_LUT4 I0=$abc$924$new_n76_ I1=$abc$924$new_n81_ I2=$false I3=$false O=$abc$924$auto$rtlil.cc:1969:NotGate$840
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:44"
+.param LUT_INIT 1000
+.gate SB_LUT4 I0=$abc$924$new_n77_ I1=$abc$924$new_n78_ I2=$abc$924$new_n79_ I3=$abc$924$new_n80_ O=$abc$924$new_n76_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 1000000000000000
-.gate SB_LUT4 I0=counter[25] I1=counter[26] I2=counter[27] I3=counter[28] O=$abc$626$new_n53_
+.gate SB_LUT4 I0=baud_gen_inst.counter[25] I1=baud_gen_inst.counter[26] I2=baud_gen_inst.counter[27] I3=baud_gen_inst.counter[28] O=$abc$924$new_n77_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=counter[21] I1=counter[22] I2=counter[23] I3=counter[24] O=$abc$626$new_n54_
+.gate SB_LUT4 I0=baud_gen_inst.counter[21] I1=baud_gen_inst.counter[22] I2=baud_gen_inst.counter[23] I3=baud_gen_inst.counter[24] O=$abc$924$new_n78_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=counter[9] I1=counter[4] I2=counter[5] I3=counter[6] O=$abc$626$new_n55_
+.gate SB_LUT4 I0=baud_gen_inst.counter[4] I1=baud_gen_inst.counter[5] I2=baud_gen_inst.counter[6] I3=baud_gen_inst.counter[9] O=$abc$924$new_n79_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 1000000000000000
-.gate SB_LUT4 I0=counter[29] I1=counter[30] I2=counter[31] I3=counter[0] O=$abc$626$new_n56_
+.gate SB_LUT4 I0=baud_gen_inst.counter[29] I1=baud_gen_inst.counter[30] I2=baud_gen_inst.counter[31] I3=baud_gen_inst.counter[0] O=$abc$924$new_n80_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000100000000
-.gate SB_LUT4 I0=$abc$626$new_n58_ I1=$abc$626$new_n59_ I2=$abc$626$new_n60_ I3=$abc$626$new_n61_ O=$abc$626$new_n57_
+.gate SB_LUT4 I0=$abc$924$new_n82_ I1=$abc$924$new_n83_ I2=$abc$924$new_n84_ I3=$abc$924$new_n85_ O=$abc$924$new_n81_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 1000000000000000
-.gate SB_LUT4 I0=counter[8] I1=counter[10] I2=counter[11] I3=counter[12] O=$abc$626$new_n58_
+.gate SB_LUT4 I0=baud_gen_inst.counter[8] I1=baud_gen_inst.counter[10] I2=baud_gen_inst.counter[11] I3=baud_gen_inst.counter[12] O=$abc$924$new_n82_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=counter[1] I1=counter[2] I2=counter[3] I3=counter[7] O=$abc$626$new_n59_
+.gate SB_LUT4 I0=baud_gen_inst.counter[1] I1=baud_gen_inst.counter[2] I2=baud_gen_inst.counter[3] I3=baud_gen_inst.counter[7] O=$abc$924$new_n83_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=counter[17] I1=counter[18] I2=counter[19] I3=counter[20] O=$abc$626$new_n60_
+.gate SB_LUT4 I0=baud_gen_inst.counter[17] I1=baud_gen_inst.counter[18] I2=baud_gen_inst.counter[19] I3=baud_gen_inst.counter[20] O=$abc$924$new_n84_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=counter[13] I1=counter[14] I2=counter[15] I3=counter[16] O=$abc$626$new_n61_
+.gate SB_LUT4 I0=baud_gen_inst.counter[13] I1=baud_gen_inst.counter[14] I2=baud_gen_inst.counter[15] I3=baud_gen_inst.counter[16] O=$abc$924$new_n85_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
 .param LUT_INIT 0000000000000001
-.gate SB_LUT4 I0=counter[1] I1=$false I2=$false I3=$false O=$abc$626$add$top.v:23$2_Y[1]
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[0] I1=uart_tx_inst.shift_count[1] I2=$abc$924$new_n87_ I3=$false O=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
-.param LUT_INIT 01
-.gate SB_LUT4 I0=shift_count[1] I1=$false I2=$false I3=$false O=$abc$626$add$top.v:50$8_Y[1]
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:48"
+.param LUT_INIT 00010000
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[2] I1=uart_tx_inst.shift_count[4] I2=uart_tx_inst.shift_count[5] I3=uart_tx_inst.shift_count[3] O=$abc$924$new_n87_
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
-.param LUT_INIT 01
-.gate SB_LUT4 I0=baud_clk I1=$false I2=$false I3=$false O=$0\baud_clk[0:0]
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 0000000100000000
+.gate SB_LUT4 I0=uart_tx_inst.state[0] I1=uart_tx_inst.state[1] I2=$false I3=$false O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$51.$and$/usr/bin/../share/yosys/techmap.v:434$414_Y[0]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
-.param LUT_INIT 01
-.gate SB_LUT4 I0=$abc$626$new_n52_ I1=$abc$626$new_n57_ I2=$false I3=$false O=$abc$626$auto$dff2dffe.cc:158:make_patterns_logic$452
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:44"
+.param LUT_INIT 0001
+.gate SB_LUT4 I0=$abc$924$new_n91_ I1=$abc$924$new_n90_ I2=uart_tx_inst.state[1] I3=uart_tx_inst.state[0] O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$reduce_or$/usr/bin/../share/yosys/techmap.v:441$375_Y
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 0000000011101111
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[0] I1=uart_tx_inst.shift_count[1] I2=$abc$924$new_n87_ I3=uart_tx_inst.tray[7] O=$abc$924$new_n90_
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1110111100000000
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[0] I1=uart_tx_inst.shift_count[1] I2=$abc$924$new_n87_ I3=uart_tx_inst.tray[6] O=$abc$924$new_n91_
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 0001000000000000
+.gate SB_LUT4 I0=$abc$924$new_n94_ I1=$abc$924$new_n93_ I2=uart_tx_inst.state[1] I3=uart_tx_inst.state[0] O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$reduce_or$/usr/bin/../share/yosys/techmap.v:441$372_Y
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 0000000000011111
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[0] I1=uart_tx_inst.shift_count[1] I2=$abc$924$new_n87_ I3=uart_tx_inst.tray[4] O=$abc$924$new_n93_
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 0000000011101111
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[0] I1=uart_tx_inst.shift_count[1] I2=uart_tx_inst.tray[3] I3=$abc$924$new_n87_ O=$abc$924$new_n94_
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 0000000100000000
+.gate SB_LUT4 I0=uart_tx_inst.state[0] I1=uart_tx_inst.state[1] I2=$false I3=$false O=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:44"
+.param LUT_INIT 0100
+.gate SB_LUT4 I0=$abc$924$auto$rtlil.cc:1969:NotGate$844 I1=uart_tx_inst.tray[0] I2=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 I3=$abc$924$techmap$techmap\uart_tx_inst.$procmux$62.$and$/usr/bin/../share/yosys/techmap.v:434$401_Y_new_ O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$62.$reduce_or$/usr/bin/../share/yosys/techmap.v:441$402_Y
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1111111111100000
+.gate SB_LUT4 I0=$abc$924$techmap$techmap\uart_tx_inst.$procmux$51.$and$/usr/bin/../share/yosys/techmap.v:434$414_Y[0] I1=uart_tx_inst.ftdi_tx_gg I2=$false I3=$false O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$62.$and$/usr/bin/../share/yosys/techmap.v:434$401_Y_new_
 .attr module_not_derived 00000000000000000000000000000001
 .attr src "/usr/bin/../share/yosys/ice40/cells_map.v:44"
 .param LUT_INIT 1000
-.gate SB_LUT4 I0=$false I1=$true I2=counter[0] I3=$false O=$add$top.v:23$2_Y[0]
+.gate SB_LUT4 I0=$abc$924$auto$rtlil.cc:1969:NotGate$844 I1=uart_tx_inst.state[0] I2=uart_tx_inst.state[1] I3=$false O=$abc$924$auto$simplemap.cc:127:simplemap_reduce$606
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:48"
+.param LUT_INIT 00011100
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[0] I1=$abc$924$auto$rtlil.cc:1969:NotGate$844 I2=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 I3=$false O=$abc$924$auto$dff2dffe.cc:175:make_patterns_logic$703
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:48"
+.param LUT_INIT 11100000
+.gate SB_LUT4 I0=uart_tx_inst.tray[1] I1=uart_tx_inst.tray[0] I2=$abc$924$auto$rtlil.cc:1969:NotGate$844 I3=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[0]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1100101000000000
+.gate SB_LUT4 I0=uart_tx_inst.tray[2] I1=uart_tx_inst.tray[1] I2=$abc$924$auto$rtlil.cc:1969:NotGate$844 I3=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[1]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1100101000000000
+.gate SB_LUT4 I0=uart_tx_inst.tray[3] I1=uart_tx_inst.tray[2] I2=$abc$924$auto$rtlil.cc:1969:NotGate$844 I3=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[2]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1100101000000000
+.gate SB_LUT4 I0=uart_tx_inst.tray[5] I1=uart_tx_inst.tray[4] I2=$abc$924$auto$rtlil.cc:1969:NotGate$844 I3=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[4]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1100101000000000
+.gate SB_LUT4 I0=uart_tx_inst.tray[6] I1=uart_tx_inst.tray[5] I2=$abc$924$auto$rtlil.cc:1969:NotGate$844 I3=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[5]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:52"
+.param LUT_INIT 1100101000000000
+.gate SB_LUT4 I0=$abc$924$auto$rtlil.cc:1969:NotGate$844 I1=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 I2=uart_tx_inst.tray[7] I3=$false O=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[7]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:48"
+.param LUT_INIT 10000000
+.gate SB_LUT4 I0=uart_tx_inst.state[0] I1=$false I2=$false I3=$false O=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
+.param LUT_INIT 01
+.gate SB_LUT4 I0=baud_gen_inst.counter[1] I1=$false I2=$false I3=$false O=$abc$924$auto$simplemap.cc:309:simplemap_lut$640[1]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
+.param LUT_INIT 01
+.gate SB_LUT4 I0=uart_tx_inst.shift_count[1] I1=$false I2=$false I3=$false O=$abc$924$auto$simplemap.cc:309:simplemap_lut$659[1]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
+.param LUT_INIT 01
+.gate SB_LUT4 I0=baud_gen_inst.baud_clk I1=$false I2=$false I3=$false O=$abc$924$techmap\baud_gen_inst.$0\baud_clk[0:0]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:40"
+.param LUT_INIT 01
+.gate SB_LUT4 I0=$abc$924$new_n76_ I1=$abc$924$new_n81_ I2=$false I3=$false O=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$664
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/bin/../share/yosys/ice40/cells_map.v:44"
+.param LUT_INIT 1000
+.gate SB_LUT4 I0=$false I1=$true I2=baud_gen_inst.counter[0] I3=$false O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[0]
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_LUT4 I0=$false I1=$false I2=counter[10] I3=$auto$alumacc.cc:474:replace_alu$34.C[10] O=$add$top.v:23$2_Y[10]
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[10] I3=$auto$alumacc.cc:474:replace_alu$105.C[10] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[10]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[10] CO=$auto$alumacc.cc:474:replace_alu$34.C[11] I0=$false I1=counter[10]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[10] CO=$auto$alumacc.cc:474:replace_alu$105.C[11] I0=$false I1=baud_gen_inst.counter[10]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[11] I3=$auto$alumacc.cc:474:replace_alu$34.C[11] O=$add$top.v:23$2_Y[11]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[11] I3=$auto$alumacc.cc:474:replace_alu$105.C[11] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[11]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[11] CO=$auto$alumacc.cc:474:replace_alu$34.C[12] I0=$false I1=counter[11]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[11] CO=$auto$alumacc.cc:474:replace_alu$105.C[12] I0=$false I1=baud_gen_inst.counter[11]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[12] I3=$auto$alumacc.cc:474:replace_alu$34.C[12] O=$add$top.v:23$2_Y[12]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[12] I3=$auto$alumacc.cc:474:replace_alu$105.C[12] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[12]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[12] CO=$auto$alumacc.cc:474:replace_alu$34.C[13] I0=$false I1=counter[12]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[12] CO=$auto$alumacc.cc:474:replace_alu$105.C[13] I0=$false I1=baud_gen_inst.counter[12]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[13] I3=$auto$alumacc.cc:474:replace_alu$34.C[13] O=$add$top.v:23$2_Y[13]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[13] I3=$auto$alumacc.cc:474:replace_alu$105.C[13] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[13]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[13] CO=$auto$alumacc.cc:474:replace_alu$34.C[14] I0=$false I1=counter[13]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[13] CO=$auto$alumacc.cc:474:replace_alu$105.C[14] I0=$false I1=baud_gen_inst.counter[13]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[14] I3=$auto$alumacc.cc:474:replace_alu$34.C[14] O=$add$top.v:23$2_Y[14]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[14] I3=$auto$alumacc.cc:474:replace_alu$105.C[14] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[14]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[14] CO=$auto$alumacc.cc:474:replace_alu$34.C[15] I0=$false I1=counter[14]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[14] CO=$auto$alumacc.cc:474:replace_alu$105.C[15] I0=$false I1=baud_gen_inst.counter[14]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[15] I3=$auto$alumacc.cc:474:replace_alu$34.C[15] O=$add$top.v:23$2_Y[15]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[15] I3=$auto$alumacc.cc:474:replace_alu$105.C[15] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[15]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[15] CO=$auto$alumacc.cc:474:replace_alu$34.C[16] I0=$false I1=counter[15]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[15] CO=$auto$alumacc.cc:474:replace_alu$105.C[16] I0=$false I1=baud_gen_inst.counter[15]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[16] I3=$auto$alumacc.cc:474:replace_alu$34.C[16] O=$add$top.v:23$2_Y[16]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[16] I3=$auto$alumacc.cc:474:replace_alu$105.C[16] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[16]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[16] CO=$auto$alumacc.cc:474:replace_alu$34.C[17] I0=$false I1=counter[16]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[16] CO=$auto$alumacc.cc:474:replace_alu$105.C[17] I0=$false I1=baud_gen_inst.counter[16]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[17] I3=$auto$alumacc.cc:474:replace_alu$34.C[17] O=$add$top.v:23$2_Y[17]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[17] I3=$auto$alumacc.cc:474:replace_alu$105.C[17] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[17]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[17] CO=$auto$alumacc.cc:474:replace_alu$34.C[18] I0=$false I1=counter[17]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[17] CO=$auto$alumacc.cc:474:replace_alu$105.C[18] I0=$false I1=baud_gen_inst.counter[17]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[18] I3=$auto$alumacc.cc:474:replace_alu$34.C[18] O=$add$top.v:23$2_Y[18]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[18] I3=$auto$alumacc.cc:474:replace_alu$105.C[18] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[18]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[18] CO=$auto$alumacc.cc:474:replace_alu$34.C[19] I0=$false I1=counter[18]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[18] CO=$auto$alumacc.cc:474:replace_alu$105.C[19] I0=$false I1=baud_gen_inst.counter[18]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[19] I3=$auto$alumacc.cc:474:replace_alu$34.C[19] O=$add$top.v:23$2_Y[19]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[19] I3=$auto$alumacc.cc:474:replace_alu$105.C[19] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[19]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[19] CO=$auto$alumacc.cc:474:replace_alu$34.C[20] I0=$false I1=counter[19]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[19] CO=$auto$alumacc.cc:474:replace_alu$105.C[20] I0=$false I1=baud_gen_inst.counter[19]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_CARRY CI=counter[0] CO=$auto$alumacc.cc:474:replace_alu$34.C[2] I0=$false I1=counter[1]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_CARRY CI=baud_gen_inst.counter[0] CO=$auto$alumacc.cc:474:replace_alu$105.C[2] I0=$false I1=baud_gen_inst.counter[1]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[20] I3=$auto$alumacc.cc:474:replace_alu$34.C[20] O=$add$top.v:23$2_Y[20]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[20] I3=$auto$alumacc.cc:474:replace_alu$105.C[20] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[20]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[20] CO=$auto$alumacc.cc:474:replace_alu$34.C[21] I0=$false I1=counter[20]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[20] CO=$auto$alumacc.cc:474:replace_alu$105.C[21] I0=$false I1=baud_gen_inst.counter[20]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[21] I3=$auto$alumacc.cc:474:replace_alu$34.C[21] O=$add$top.v:23$2_Y[21]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[21] I3=$auto$alumacc.cc:474:replace_alu$105.C[21] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[21]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[21] CO=$auto$alumacc.cc:474:replace_alu$34.C[22] I0=$false I1=counter[21]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[21] CO=$auto$alumacc.cc:474:replace_alu$105.C[22] I0=$false I1=baud_gen_inst.counter[21]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[22] I3=$auto$alumacc.cc:474:replace_alu$34.C[22] O=$add$top.v:23$2_Y[22]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[22] I3=$auto$alumacc.cc:474:replace_alu$105.C[22] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[22]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[22] CO=$auto$alumacc.cc:474:replace_alu$34.C[23] I0=$false I1=counter[22]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[22] CO=$auto$alumacc.cc:474:replace_alu$105.C[23] I0=$false I1=baud_gen_inst.counter[22]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[23] I3=$auto$alumacc.cc:474:replace_alu$34.C[23] O=$add$top.v:23$2_Y[23]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[23] I3=$auto$alumacc.cc:474:replace_alu$105.C[23] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[23]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[23] CO=$auto$alumacc.cc:474:replace_alu$34.C[24] I0=$false I1=counter[23]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[23] CO=$auto$alumacc.cc:474:replace_alu$105.C[24] I0=$false I1=baud_gen_inst.counter[23]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[24] I3=$auto$alumacc.cc:474:replace_alu$34.C[24] O=$add$top.v:23$2_Y[24]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[24] I3=$auto$alumacc.cc:474:replace_alu$105.C[24] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[24]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[24] CO=$auto$alumacc.cc:474:replace_alu$34.C[25] I0=$false I1=counter[24]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[24] CO=$auto$alumacc.cc:474:replace_alu$105.C[25] I0=$false I1=baud_gen_inst.counter[24]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[25] I3=$auto$alumacc.cc:474:replace_alu$34.C[25] O=$add$top.v:23$2_Y[25]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[25] I3=$auto$alumacc.cc:474:replace_alu$105.C[25] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[25]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[25] CO=$auto$alumacc.cc:474:replace_alu$34.C[26] I0=$false I1=counter[25]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[25] CO=$auto$alumacc.cc:474:replace_alu$105.C[26] I0=$false I1=baud_gen_inst.counter[25]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[26] I3=$auto$alumacc.cc:474:replace_alu$34.C[26] O=$add$top.v:23$2_Y[26]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[26] I3=$auto$alumacc.cc:474:replace_alu$105.C[26] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[26]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[26] CO=$auto$alumacc.cc:474:replace_alu$34.C[27] I0=$false I1=counter[26]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[26] CO=$auto$alumacc.cc:474:replace_alu$105.C[27] I0=$false I1=baud_gen_inst.counter[26]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[27] I3=$auto$alumacc.cc:474:replace_alu$34.C[27] O=$add$top.v:23$2_Y[27]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[27] I3=$auto$alumacc.cc:474:replace_alu$105.C[27] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[27]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[27] CO=$auto$alumacc.cc:474:replace_alu$34.C[28] I0=$false I1=counter[27]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[27] CO=$auto$alumacc.cc:474:replace_alu$105.C[28] I0=$false I1=baud_gen_inst.counter[27]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[28] I3=$auto$alumacc.cc:474:replace_alu$34.C[28] O=$add$top.v:23$2_Y[28]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[28] I3=$auto$alumacc.cc:474:replace_alu$105.C[28] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[28]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[28] CO=$auto$alumacc.cc:474:replace_alu$34.C[29] I0=$false I1=counter[28]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[28] CO=$auto$alumacc.cc:474:replace_alu$105.C[29] I0=$false I1=baud_gen_inst.counter[28]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[29] I3=$auto$alumacc.cc:474:replace_alu$34.C[29] O=$add$top.v:23$2_Y[29]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[29] I3=$auto$alumacc.cc:474:replace_alu$105.C[29] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[29]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[29] CO=$auto$alumacc.cc:474:replace_alu$34.C[30] I0=$false I1=counter[29]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[29] CO=$auto$alumacc.cc:474:replace_alu$105.C[30] I0=$false I1=baud_gen_inst.counter[29]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[2] I3=$auto$alumacc.cc:474:replace_alu$34.C[2] O=$add$top.v:23$2_Y[2]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[2] I3=$auto$alumacc.cc:474:replace_alu$105.C[2] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[2] CO=$auto$alumacc.cc:474:replace_alu$34.C[3] I0=$false I1=counter[2]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[2] CO=$auto$alumacc.cc:474:replace_alu$105.C[3] I0=$false I1=baud_gen_inst.counter[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[30] I3=$auto$alumacc.cc:474:replace_alu$34.C[30] O=$add$top.v:23$2_Y[30]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[30] I3=$auto$alumacc.cc:474:replace_alu$105.C[30] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[30]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[30] CO=$auto$alumacc.cc:474:replace_alu$34.C[31] I0=$false I1=counter[30]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[30] CO=$auto$alumacc.cc:474:replace_alu$105.C[31] I0=$false I1=baud_gen_inst.counter[30]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[31] I3=$auto$alumacc.cc:474:replace_alu$34.C[31] O=$add$top.v:23$2_Y[31]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[31] I3=$auto$alumacc.cc:474:replace_alu$105.C[31] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[31]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_LUT4 I0=$false I1=$false I2=counter[3] I3=$auto$alumacc.cc:474:replace_alu$34.C[3] O=$add$top.v:23$2_Y[3]
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[3] I3=$auto$alumacc.cc:474:replace_alu$105.C[3] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[3]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[3] CO=$auto$alumacc.cc:474:replace_alu$34.C[4] I0=$false I1=counter[3]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[3] CO=$auto$alumacc.cc:474:replace_alu$105.C[4] I0=$false I1=baud_gen_inst.counter[3]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[4] I3=$auto$alumacc.cc:474:replace_alu$34.C[4] O=$add$top.v:23$2_Y[4]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[4] I3=$auto$alumacc.cc:474:replace_alu$105.C[4] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[4]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[4] CO=$auto$alumacc.cc:474:replace_alu$34.C[5] I0=$false I1=counter[4]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[4] CO=$auto$alumacc.cc:474:replace_alu$105.C[5] I0=$false I1=baud_gen_inst.counter[4]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[5] I3=$auto$alumacc.cc:474:replace_alu$34.C[5] O=$add$top.v:23$2_Y[5]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[5] I3=$auto$alumacc.cc:474:replace_alu$105.C[5] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[5]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[5] CO=$auto$alumacc.cc:474:replace_alu$34.C[6] I0=$false I1=counter[5]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[5] CO=$auto$alumacc.cc:474:replace_alu$105.C[6] I0=$false I1=baud_gen_inst.counter[5]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[6] I3=$auto$alumacc.cc:474:replace_alu$34.C[6] O=$add$top.v:23$2_Y[6]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[6] I3=$auto$alumacc.cc:474:replace_alu$105.C[6] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[6]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[6] CO=$auto$alumacc.cc:474:replace_alu$34.C[7] I0=$false I1=counter[6]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[6] CO=$auto$alumacc.cc:474:replace_alu$105.C[7] I0=$false I1=baud_gen_inst.counter[6]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[7] I3=$auto$alumacc.cc:474:replace_alu$34.C[7] O=$add$top.v:23$2_Y[7]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[7] I3=$auto$alumacc.cc:474:replace_alu$105.C[7] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[7]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[7] CO=$auto$alumacc.cc:474:replace_alu$34.C[8] I0=$false I1=counter[7]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[7] CO=$auto$alumacc.cc:474:replace_alu$105.C[8] I0=$false I1=baud_gen_inst.counter[7]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[8] I3=$auto$alumacc.cc:474:replace_alu$34.C[8] O=$add$top.v:23$2_Y[8]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[8] I3=$auto$alumacc.cc:474:replace_alu$105.C[8] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[8]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[8] CO=$auto$alumacc.cc:474:replace_alu$34.C[9] I0=$false I1=counter[8]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[8] CO=$auto$alumacc.cc:474:replace_alu$105.C[9] I0=$false I1=baud_gen_inst.counter[8]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=counter[9] I3=$auto$alumacc.cc:474:replace_alu$34.C[9] O=$add$top.v:23$2_Y[9]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=baud_gen_inst.counter[9] I3=$auto$alumacc.cc:474:replace_alu$105.C[9] O=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[9]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$34.C[9] CO=$auto$alumacc.cc:474:replace_alu$34.C[10] I0=$false I1=counter[9]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$105.C[9] CO=$auto$alumacc.cc:474:replace_alu$105.C[10] I0=$false I1=baud_gen_inst.counter[9]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:23|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$true I2=shift_count[0] I3=$false O=$add$top.v:50$8_Y[0]
+.attr src "top.v:27|baud_gen.v:19|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$true I2=uart_tx_inst.shift_count[0] I3=$false O=$auto$wreduce.cc:455:run$99[0]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=shift_count[0] CO=$auto$alumacc.cc:474:replace_alu$37.C[2] I0=$false I1=shift_count[1]
+.gate SB_CARRY CI=uart_tx_inst.shift_count[0] CO=$auto$alumacc.cc:474:replace_alu$108.C[2] I0=$false I1=uart_tx_inst.shift_count[1]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=shift_count[2] I3=$auto$alumacc.cc:474:replace_alu$37.C[2] O=$add$top.v:50$8_Y[2]
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=uart_tx_inst.shift_count[2] I3=$auto$alumacc.cc:474:replace_alu$108.C[2] O=$auto$wreduce.cc:455:run$99[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$37.C[2] CO=$auto$alumacc.cc:474:replace_alu$37.C[3] I0=$false I1=shift_count[2]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$108.C[2] CO=$auto$alumacc.cc:474:replace_alu$108.C[3] I0=$false I1=uart_tx_inst.shift_count[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=shift_count[3] I3=$auto$alumacc.cc:474:replace_alu$37.C[3] O=$add$top.v:50$8_Y[3]
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=uart_tx_inst.shift_count[3] I3=$auto$alumacc.cc:474:replace_alu$108.C[3] O=$auto$wreduce.cc:455:run$99[3]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$37.C[3] CO=$auto$alumacc.cc:474:replace_alu$37.C[4] I0=$false I1=shift_count[3]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$108.C[3] CO=$auto$alumacc.cc:474:replace_alu$108.C[4] I0=$false I1=uart_tx_inst.shift_count[3]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=shift_count[4] I3=$auto$alumacc.cc:474:replace_alu$37.C[4] O=$add$top.v:50$8_Y[4]
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=uart_tx_inst.shift_count[4] I3=$auto$alumacc.cc:474:replace_alu$108.C[4] O=$auto$wreduce.cc:455:run$99[4]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$37.C[4] CO=$auto$alumacc.cc:474:replace_alu$37.C[5] I0=$false I1=shift_count[4]
+.gate SB_CARRY CI=$auto$alumacc.cc:474:replace_alu$108.C[4] CO=$auto$alumacc.cc:474:replace_alu$108.C[5] I0=$false I1=uart_tx_inst.shift_count[4]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:47"
-.gate SB_LUT4 I0=$false I1=$false I2=shift_count[5] I3=$auto$alumacc.cc:474:replace_alu$37.C[5] O=$add$top.v:50$8_Y[5]
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:47"
+.gate SB_LUT4 I0=$false I1=$false I2=uart_tx_inst.shift_count[5] I3=$auto$alumacc.cc:474:replace_alu$108.C[5] O=$auto$wreduce.cc:455:run$99[5]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:50|/usr/bin/../share/yosys/ice40/arith_map.v:53"
+.attr src "top.v:41|shift_tx_fsm.v:88|/usr/bin/../share/yosys/ice40/arith_map.v:53"
 .param LUT_INIT 0110100110010110
-.gate SB_DFFSR C=baud_clk D=tray[1] Q=tray[0] R=$0\tray[9:0][9]
+.gate SB_DFFE C=hwclk D=$abc$924$techmap\baud_gen_inst.$0\baud_clk[0:0] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$664 Q=baud_gen_inst.baud_clk
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSS C=baud_clk D=tray[2] Q=tray[1] S=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[0] Q=baud_gen_inst.counter[0] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=tray[3] Q=tray[2] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFESR C=hwclk D=$abc$924$auto$simplemap.cc:309:simplemap_lut$640[1] E=baud_gen_inst.counter[0] Q=baud_gen_inst.counter[1] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=tray[4] Q=tray[3] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[2] Q=baud_gen_inst.counter[2] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=tray[5] Q=tray[4] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[3] Q=baud_gen_inst.counter[3] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=tray[6] Q=tray[5] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[4] Q=baud_gen_inst.counter[4] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=tray[7] Q=tray[6] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[5] Q=baud_gen_inst.counter[5] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSS C=baud_clk D=tray[8] Q=tray[7] S=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[6] Q=baud_gen_inst.counter[6] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=tray[9] Q=tray[8] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[7] Q=baud_gen_inst.counter[7] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFF C=baud_clk D=$0\tray[9:0][9] Q=tray[9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[8] Q=baud_gen_inst.counter[8] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=$add$top.v:50$8_Y[0] Q=shift_count[0] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[9] Q=baud_gen_inst.counter[9] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFESR C=baud_clk D=$abc$626$add$top.v:50$8_Y[1] E=shift_count[0] Q=shift_count[1] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[10] Q=baud_gen_inst.counter[10] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:8"
-.gate SB_DFFSR C=baud_clk D=$add$top.v:50$8_Y[2] Q=shift_count[2] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[11] Q=baud_gen_inst.counter[11] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=$add$top.v:50$8_Y[3] Q=shift_count[3] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[12] Q=baud_gen_inst.counter[12] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=$add$top.v:50$8_Y[4] Q=shift_count[4] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[13] Q=baud_gen_inst.counter[13] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=baud_clk D=$add$top.v:50$8_Y[5] Q=shift_count[5] R=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[14] Q=baud_gen_inst.counter[14] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSS C=baud_clk D=tray[0] Q=ftdi_tx_gg S=$0\tray[9:0][9]
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[15] Q=baud_gen_inst.counter[15] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:41|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFE C=hwclk D=$0\baud_clk[0:0] E=$abc$626$auto$dff2dffe.cc:158:make_patterns_logic$452 Q=baud_clk
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[16] Q=baud_gen_inst.counter[16] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:8"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[0] Q=counter[0] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[17] Q=baud_gen_inst.counter[17] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFESR C=hwclk D=$abc$626$add$top.v:23$2_Y[1] E=counter[0] Q=counter[1] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[18] Q=baud_gen_inst.counter[18] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:8"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[2] Q=counter[2] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[19] Q=baud_gen_inst.counter[19] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[3] Q=counter[3] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[20] Q=baud_gen_inst.counter[20] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[4] Q=counter[4] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[21] Q=baud_gen_inst.counter[21] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[5] Q=counter[5] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[22] Q=baud_gen_inst.counter[22] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[6] Q=counter[6] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[23] Q=baud_gen_inst.counter[23] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[7] Q=counter[7] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[24] Q=baud_gen_inst.counter[24] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[8] Q=counter[8] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[25] Q=baud_gen_inst.counter[25] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[9] Q=counter[9] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[26] Q=baud_gen_inst.counter[26] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[10] Q=counter[10] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[27] Q=baud_gen_inst.counter[27] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[11] Q=counter[11] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[28] Q=baud_gen_inst.counter[28] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[12] Q=counter[12] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[29] Q=baud_gen_inst.counter[29] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[13] Q=counter[13] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[30] Q=baud_gen_inst.counter[30] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[14] Q=counter[14] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=hwclk D=$techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[31] Q=baud_gen_inst.counter[31] R=$abc$924$auto$rtlil.cc:1969:NotGate$840
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[15] Q=counter[15] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:27|baud_gen.v:18|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$51.$and$/usr/bin/../share/yosys/techmap.v:434$414_Y[0] Q=uart_tx_inst.state[0] R=$abc$924$auto$rtlil.cc:1969:NotGate$906
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[16] Q=counter[16] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSR C=baud_gen_inst.baud_clk D=$abc$924$auto$simplemap.cc:127:simplemap_reduce$606 Q=uart_tx_inst.state[1] R=$abc$924$auto$rtlil.cc:1969:NotGate$906
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[17] Q=counter[17] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFSS C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$62.$reduce_or$/usr/bin/../share/yosys/techmap.v:441$402_Y Q=uart_tx_inst.ftdi_tx_gg S=$abc$924$auto$rtlil.cc:1969:NotGate$906
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[18] Q=counter[18] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:2"
+.gate SB_DFFESR C=baud_gen_inst.baud_clk D=$auto$wreduce.cc:455:run$99[0] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 Q=uart_tx_inst.shift_count[0] R=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[19] Q=counter[19] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFESR C=baud_gen_inst.baud_clk D=$abc$924$auto$simplemap.cc:309:simplemap_lut$659[1] E=$abc$924$auto$dff2dffe.cc:175:make_patterns_logic$703 Q=uart_tx_inst.shift_count[1] R=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[20] Q=counter[20] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFESR C=baud_gen_inst.baud_clk D=$auto$wreduce.cc:455:run$99[2] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 Q=uart_tx_inst.shift_count[2] R=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[21] Q=counter[21] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFESR C=baud_gen_inst.baud_clk D=$auto$wreduce.cc:455:run$99[3] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 Q=uart_tx_inst.shift_count[3] R=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[22] Q=counter[22] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFESR C=baud_gen_inst.baud_clk D=$auto$wreduce.cc:455:run$99[4] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 Q=uart_tx_inst.shift_count[4] R=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[23] Q=counter[23] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFESR C=baud_gen_inst.baud_clk D=$auto$wreduce.cc:455:run$99[5] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$679 Q=uart_tx_inst.shift_count[5] R=$abc$924$auto$rtlil.cc:1969:NotGate$844
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[24] Q=counter[24] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[0] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[0]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[25] Q=counter[25] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[1] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[1]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[26] Q=counter[26] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[2] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[2]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[27] Q=counter[27] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$reduce_or$/usr/bin/../share/yosys/techmap.v:441$372_Y E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[3]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[28] Q=counter[28] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[4] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[4]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[29] Q=counter[29] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[5] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[5]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[30] Q=counter[30] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$reduce_or$/usr/bin/../share/yosys/techmap.v:441$375_Y E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[6]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.gate SB_DFFSR C=hwclk D=$add$top.v:23$2_Y[31] Q=counter[31] R=$abc$626$auto$rtlil.cc:1969:NotGate$530
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.gate SB_DFFE C=baud_gen_inst.baud_clk D=$abc$924$techmap$techmap\uart_tx_inst.$procmux$79.$and$/usr/bin/../share/yosys/techmap.v:434$367_Y[7] E=$abc$924$auto$dff2dffe.cc:158:make_patterns_logic$731 Q=uart_tx_inst.tray[7]
 .attr module_not_derived 00000000000000000000000000000001
-.attr src "top.v:21|/usr/bin/../share/yosys/ice40/cells_map.v:2"
-.names $abc$626$add$top.v:23$2_Y[1] $add$top.v:23$2_Y[1]
+.attr src "top.v:41|shift_tx_fsm.v:60|/usr/bin/../share/yosys/ice40/cells_map.v:8"
+.names $false $auto$alumacc.cc:474:replace_alu$105.C[0]
 1 1
-.names $abc$626$add$top.v:50$8_Y[1] $add$top.v:50$8_Y[1]
+.names baud_gen_inst.counter[0] $auto$alumacc.cc:474:replace_alu$105.C[1]
 1 1
-.names $false $auto$alumacc.cc:474:replace_alu$34.C[0]
+.names $false $auto$alumacc.cc:474:replace_alu$108.C[0]
 1 1
-.names counter[0] $auto$alumacc.cc:474:replace_alu$34.C[1]
+.names uart_tx_inst.shift_count[0] $auto$alumacc.cc:474:replace_alu$108.C[1]
 1 1
-.names $false $auto$alumacc.cc:474:replace_alu$37.C[0]
+.names $abc$924$auto$simplemap.cc:309:simplemap_lut$659[1] $auto$wreduce.cc:455:run$99[1]
 1 1
-.names shift_count[0] $auto$alumacc.cc:474:replace_alu$37.C[1]
+.names $abc$924$auto$simplemap.cc:309:simplemap_lut$640[1] $techmap\baud_gen_inst.$add$baud_gen.v:19$38_Y[1]
+1 1
+.names baud_gen_inst.baud_clk baud_clk
+1 1
+.names hwclk baud_gen_inst.hwclk
 1 1
 .names $false data_frame[0]
 1 1
-.names $true data_frame[1]
+.names $false data_frame[1]
 1 1
 .names $false data_frame[2]
 1 1
-.names $false data_frame[3]
+.names $true data_frame[3]
 1 1
 .names $false data_frame[4]
 1 1
 .names $false data_frame[5]
 1 1
-.names $false data_frame[6]
+.names $true data_frame[6]
 1 1
-.names $true data_frame[7]
+.names $false data_frame[7]
 1 1
-.names $false data_frame[8]
+.names uart_tx_inst.ftdi_tx_gg ftdi_tx
 1 1
-.names $true data_frame[9]
+.names baud_gen_inst.baud_clk uart_tx_inst.baud_clk
 1 1
-.names ftdi_tx_gg ftdi_tx
+.names $false uart_tx_inst.data_frame[0]
+1 1
+.names $false uart_tx_inst.data_frame[1]
+1 1
+.names $false uart_tx_inst.data_frame[2]
+1 1
+.names $true uart_tx_inst.data_frame[3]
+1 1
+.names $false uart_tx_inst.data_frame[4]
+1 1
+.names $false uart_tx_inst.data_frame[5]
+1 1
+.names $true uart_tx_inst.data_frame[6]
+1 1
+.names $false uart_tx_inst.data_frame[7]
+1 1
+.names uart_tx_inst.ftdi_tx_gg uart_tx_inst.ftdi_tx
+1 1
+.names $false uart_tx_inst.next_state[0]
+1 1
+.names $false uart_tx_inst.next_state[1]
+1 1
+.names $false uart_tx_inst.next_state[2]
+1 1
+.names $false uart_tx_inst.next_state[3]
+1 1
+.names $true uart_tx_inst.send_en
+1 1
+.names $false uart_tx_inst.state[2]
+1 1
+.names $false uart_tx_inst.state[3]
 1 1
 .end

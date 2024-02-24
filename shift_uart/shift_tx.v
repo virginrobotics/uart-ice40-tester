@@ -10,6 +10,9 @@ module shift_tx #(
 );
 
     // Shift out logic
+
+    // To-do 
+    // Add state machine logic . IDLE -> START_TX -> TX_DATA -> TX_STOP -> IDLE
     
     //reg [FRAME_WIDTH-1:0] data_frame = 10'b1010000010;// G in ASCII is 01000111, we send the LSB first in UART (i guess)
     reg [FRAME_WIDTH-1:0] tray = 10'b0;

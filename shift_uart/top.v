@@ -10,13 +10,15 @@ module top (
     parameter SOURCE_CLK = 12000000;
     parameter TARGET_CLK = 9600; // enter desired baud here : 4800, 9600, 115200 
 
+    parameter TARGET_CLK1HZ = 1;
+
     // Shift out logic
-    localparam FRAME_WIDTH = 10;
-    localparam SHIFT_AMOUNT = 10;
+    localparam FRAME_WIDTH = 8; //10
+    localparam SHIFT_AMOUNT = 9;// 8 doesn't work because shift_amount == SHIFT_AMOUNT-1 not < - i guess
 
 
     wire frame_sent;
-    reg [FRAME_WIDTH-1:0] data_frame = 10'b1010000010;
+    reg [FRAME_WIDTH-1:0] data_frame = 8'b01001000;
     
     wire baud_clk;
 
@@ -36,7 +38,7 @@ module top (
 
     // Shift register based basic UART 8n1 transmitter
 
-    shift_tx #(
+    shift_tx_fsm #(
         .FRAME_WIDTH(FRAME_WIDTH),
         .SHIFT_AMOUNT(SHIFT_AMOUNT)
     ) uart_tx_inst (
