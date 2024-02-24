@@ -15,7 +15,7 @@ module shift_tx_fsm #(
     // sudo screen /dev/ttyUSB1 9600
 
     // To-do 
-    // Add state machine logic . IDLE -> START_TX -> TX_DATA -> TX_STOP -> IDLE
+    // Add state machine logic . IDLE -> START_TX -> TX_DATA -> IDLE
     
     //reg [FRAME_WIDTH-1:0] data_frame = 10'b1010000010;// G in ASCII is 01000111, we send the LSB first in UART (i guess)
     reg [FRAME_WIDTH-1:0] tray = 0;
@@ -24,21 +24,6 @@ module shift_tx_fsm #(
 
 
     assign ftdi_tx = ftdi_tx_gg;
-
-    /* always @(posedge baud_clk) begin
-        if (shift_count == SHIFT_AMOUNT-1) begin
-            shift_count <= 0;
-            tray        <= data_frame;
-            ftdi_tx_gg  <= 1; 
-        end else begin
-            ftdi_tx_gg  <= tray[0];
-            tray    <= tray >> 1; 
-            shift_count <= shift_count + 1;
-        end
-
-
-
-    end */
 
     // FSM logic
     parameter STATE_NUM = 4;
@@ -50,12 +35,6 @@ module shift_tx_fsm #(
     parameter  START_TX = 4'd1;
     parameter  TX_DATA = 4'd2;
     parameter  TX_STOP = 4'd3;
-
-    always @(posedge baud_clk ) begin
-
-        //state <= next_state;
-        
-    end
 
     always @(posedge baud_clk) begin
         case (state)
