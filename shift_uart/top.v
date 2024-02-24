@@ -55,14 +55,32 @@ module top (
     // Send enable pulse generator from 1 Hz clock
     reg one_hz_reg;
     wire send_en_pulse;
+    reg send_en_pulse_l = 0;
+    wire send_en_pulse_q2;
+    wire tx_active;
+
+    always @(posedge one_hz) begin
+        one_hz_reg <= one_hz;
+        
+        //send_en_pulse <= one_hz & !one_hz_reg; 
+    end
+
     always @(posedge baud_clk) begin
-        one_hz_reg <= one_hz;        
+        if (send_en_pulse) begin
+            send_en_pulse_l <= 1'b1;
+        end else if (send_en_pulse_l & !tx_active) begin
+            send_en_pulse_l <= 1'b0;
+        end else begin
+            send_en_pulse_l <= send_en_pulse_l;
+        end
     end
 
     assign send_en_pulse = one_hz & !one_hz_reg;
+    //assign send_en_pulse_l = ((one_hz & !one_hz_reg) & !frame_sent) ? 1'b1 : (one_hz & !one_hz_reg);
+
 
     assign led1 = one_hz;
-    assign led2 = frame_sent;
+    assign led2 = send_en_pulse;
 
     // Shift register based basic UART 8n1 transmitter
 
@@ -71,10 +89,11 @@ module top (
         .SHIFT_AMOUNT(SHIFT_AMOUNT)
     ) uart_tx_inst (
         .baud_clk(baud_clk),
-        .send_en(send_en_pulse),
+        .send_en(send_en_pulse_l),
         .data_frame(data_frame),
         .ftdi_tx(ftdi_tx),
-        .frame_sent(frame_sent)
+        .frame_sent(frame_sent),
+        .tx_active(tx_active)
     );
     
 
