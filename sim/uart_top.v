@@ -21,16 +21,18 @@ module uart_top #(
 );
 
     // parameters
-    parameter COUNT_WIDTH = 5;
+    parameter COUNTER_WIDTH = 5;
+    parameter NUM_STATES = 5;
+    parameter COUNTER_LIMIT = 7;
 
 
     // register to store data frame to be sent
     reg [DATA_WIDTH-1:0]    hold_reg = 0;
-    reg [COUNT_WIDTH-1:0]   shift_counter = 0;
+    reg [COUNTER_WIDTH-1:0]   shift_counter = 0;
 
     // state machine regs
-    reg [4:0]   state;
-    reg [4:0]   next_state;
+    reg [NUM_STATES-1:0]   state;
+    reg [NUM_STATES-1:0]   next_state;
 
     parameter IDLE = 5'd0;
     parameter START = 5'd1;
@@ -66,7 +68,7 @@ module uart_top #(
             end
 
             SEND: begin
-                if (shift_counter >= 7) begin
+                if (shift_counter >= COUNTER_LIMIT) begin
                     next_state = STOP;
                 end else begin
                     next_state = SEND;
@@ -104,8 +106,9 @@ module uart_top #(
     end
     
     // outputs
-
-    assign uart_tx = (state == SEND) ?  hold_reg[shift_counter] : (state == START) ? 1'b0 : 1'b1;
+    assign uart_tx = (state == START) ? 1'b0 : // start bit
+                     (state == SEND && shift_counter < DATA_WIDTH) ? hold_reg[shift_counter] : // data if counter within valid range
+                     1'b1; // stop bit
     assign done = (state == STOP) ? 1'b1 : 1'b0;
     
 endmodule
