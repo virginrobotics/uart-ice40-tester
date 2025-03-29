@@ -1,3 +1,12 @@
+// Simulation commands
+// iverilog -o uart_tb uart_top.v uart_tb.v
+// vvp uart_tb
+// gtkwave uart_tb.vcd &
+
+
+
+
+
 module uart_top #(
     parameter DATA_WIDTH = 8
 ) (
@@ -54,7 +63,6 @@ module uart_top #(
 
             START: begin
                 next_state = SEND;
-                hold_reg = data_in;
             end
 
             SEND: begin
@@ -73,6 +81,16 @@ module uart_top #(
         
     end
     // end of next state logic
+
+
+    // hold register
+    always @(posedge clk ) begin
+        if (!rst_n) begin
+            hold_reg <= 0;
+        end else if (state == START) begin
+            hold_reg <= data_in;
+        end
+    end
 
     // counter
     always @(posedge clk ) begin
