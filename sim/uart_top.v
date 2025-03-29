@@ -30,6 +30,9 @@ module uart_top #(
     reg [DATA_WIDTH-1:0]    hold_reg = 0;
     reg [COUNTER_WIDTH-1:0]   shift_counter = 0;
 
+    // status
+    reg done_reg;
+
     // state machine regs
     reg [NUM_STATES-1:0]   state;
     reg [NUM_STATES-1:0]   next_state;
@@ -104,11 +107,22 @@ module uart_top #(
             shift_counter <= 0;
         end
     end
+
+    //done signal
+    always @(posedge clk ) begin
+        if (!rst_n) begin
+            done_reg <= 0;
+        end else if (state == STOP) begin
+            done_reg <= 1;            
+        end else begin
+            done_reg <= 0;
+        end
+    end
     
     // outputs
     assign uart_tx = (state == START) ? 1'b0 : // start bit
                      (state == SEND && shift_counter < DATA_WIDTH) ? hold_reg[shift_counter] : // data if counter within valid range
                      1'b1; // stop bit
-    assign done = (state == STOP) ? 1'b1 : 1'b0;
+    assign done = done_reg;
     
 endmodule
