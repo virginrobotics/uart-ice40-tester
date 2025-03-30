@@ -17,7 +17,8 @@ module uart_top #(
     input   wire    start,
 
     output  wire    uart_tx,
-    output  wire    done 
+    output  wire    done,
+    output  wire    uart_busy 
 );
 
     // parameters
@@ -124,5 +125,6 @@ module uart_top #(
                      (state == SEND && shift_counter < DATA_WIDTH) ? hold_reg[shift_counter] : // data if counter within valid range
                      1'b1; // stop bit
     assign done = done_reg;
+    assign uart_busy = (state == IDLE) ? 1'b0 : 1'b1;
     
 endmodule
