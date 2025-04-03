@@ -17,7 +17,7 @@ module seq_gen #(
     //word_rom ports
     input   wire [DATA_WIDTH-1:0]   mem_data,
     output  wire [ADDR_WIDTH-1:0]   mem_addr,
-    output  wire    mem_rd,
+    output  wire    mem_rd
     
 );
 
@@ -30,6 +30,9 @@ module seq_gen #(
     // regs
     reg [COUNTER_WIDTH-1:0] char_count;
     reg [ADDR_WIDTH-1:0] addr_reg;
+    reg mem_rd_reg;
+    reg [DATA_WIDTH-1:0] tx_data_reg;
+    reg tx_start_reg;
     
     // state machine defs
     reg [NUM_STATES-1:0]    state;
@@ -87,7 +90,7 @@ module seq_gen #(
             INCR_ADDR: begin
                 next_state = IDLE;
             end
-            default: 
+            default: next_state = IDLE;
         endcase
         
     end
@@ -116,34 +119,32 @@ module seq_gen #(
     assign mem_addr = addr_reg;
 
     // rom control : fetch word at addr
-    always @(posedge clk ) begin
-        if (!rst_n) begin
-            mem_rd <= 0;
-        end else if (state == FETCH) begin
-            mem_rd <= 1'b1;
-        end else begin
-            mem_rd <= 1'b0;
-        end
-        
-    end
+    assign mem_rd = (state == FETCH) ? 1'b1 : 1'b0;
+
 
 
     // send char to UART
+    /*
     always @(posedge clk ) begin
         if (!rst_n) begin
-            tx_data <= 1'b0;
-            tx_start <= 1'b0;
+            tx_data_reg <= 1'b0;
+            tx_start_reg <= 1'b0;
         end else if (state == SEND) begin
-            tx_data <= mem_data;
-            tx_start <= 1'b1;
+            tx_data_reg <= mem_data;
+            tx_start_reg <= 1'b1;
         end else begin
-            tx_data <= 1'b0;
-            tx_start <= 1'b0;
+            tx_data_reg <= tx_data_reg;
+            tx_start_reg <= 1'b0;
         end
         
     end
+    */
+    assign tx_data = (!rst_n) ? 0 :
+                     (state == SEND) ? mem_data : tx_data;
+    assign tx_start = (state == SEND) ? 1'b1 : 1'b0;
 
-
+    //assign tx_data = tx_data_reg;
+    //assign tx_start = tx_start_reg;
 
 
 endmodule
