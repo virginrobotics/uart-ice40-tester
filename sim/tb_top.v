@@ -1,3 +1,10 @@
+// Simulation steps
+// iverilog -o uart_tb uart_top.v seq_gen.v word_rom.v uart_test_top.v uart_tb.v
+// vvp tb_top_dump
+// gtkwave tb_top.vcd &
+
+
+
 module tb_top;
 
 reg clk;

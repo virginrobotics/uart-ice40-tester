@@ -44,7 +44,8 @@ module word_rom #(
             data_reg <= mem[addr]; 
             
         end else begin
-            data_reg <= 0;
+            //data_reg <= 0;
+            data_reg <= data_reg;
         end
         
     end
