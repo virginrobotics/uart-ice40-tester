@@ -12,7 +12,7 @@ module word_rom #(
 );
 
     localparam DEPTH = 2**ADDR_WIDTH;
-    localparam RD_LIMIT = 14; // memory init till this addr
+    localparam RD_LIMIT = 15; // memory init till this addr
 
     reg [DATA_WIDTH-1:0] mem [DEPTH-1:0];
     reg [DATA_WIDTH-1:0] data_reg;
@@ -32,7 +32,8 @@ module word_rom #(
         mem[10] = 8'h64;  // 'd'
         mem[11] = 8'h20;  // ' ' (space)
         mem[12] = 8'h21;  // '!'
-        mem[13] = 8'h0A;  // '\n' (newline)
+        mem[13] = 8'h0D;  // '\r' (carraige return)
+        mem[14] = 8'h0A;  // '\n' (newline)
     end
 
 

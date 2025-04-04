@@ -24,7 +24,7 @@ module seq_gen #(
     // parameters
     parameter COUNTER_WIDTH = 5;
     parameter NUM_STATES = 5;
-    parameter COUNTER_LIMIT = 13;
+    parameter COUNTER_LIMIT = 14;
     parameter LOOP_EN = 1;
 
     // regs
